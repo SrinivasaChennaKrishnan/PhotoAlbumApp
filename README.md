@@ -1,2 +1,0 @@
-# PhotoAlbumApp
-Created with CodeSandbox
