@@ -24,6 +24,7 @@ export default function RootReducer(state = initialState, action) {
       state.showPhoto = false;
       state.picSource = "";
       return { ...state };
+
     /* data on click of album */
     case ActionType.ON_CLICK_ALBUM:
       let photoListArray = [];
@@ -42,6 +43,7 @@ export default function RootReducer(state = initialState, action) {
       state.photolistObject = photoListArray;
       state.photoListMessage = photoListMessage;
       return { ...state };
+
     /* data on click of back to album link */
     case ActionType.BACK_TO_ALBUM:
       state.photoListMessage = "INITIAL";
@@ -49,6 +51,7 @@ export default function RootReducer(state = initialState, action) {
       state.showPhoto = false;
       state.picSource = "";
       return { ...state };
+
     /* data on click of photo */
     case ActionType.ON_CLICK_PHOTO:
       state.showPhoto = true;
@@ -56,7 +59,11 @@ export default function RootReducer(state = initialState, action) {
       state.albumMessage = "INITIAL";
       state.picSource = (action.photoSource || {}).url || "";
       state.selectedPhoto = action.photoSource;
+      if (state.picSource !== "") {
+        state.loader = false;
+      }
       return { ...state };
+
     /* data on click of back to photos link */
     case ActionType.BACK_TO_PHOTO_LIST:
       state.photoListMessage = "SUCCESS";
@@ -65,6 +72,12 @@ export default function RootReducer(state = initialState, action) {
       state.picSource = "";
       state.selectedPhoto = [];
       return { ...state };
+
+    /* loader true till getting data */
+    case ActionType.SHOW_LOADER:
+      state.loader = action.showLoader;
+      return { ...state };
+
     /* Default */
     default:
       return { ...state };
