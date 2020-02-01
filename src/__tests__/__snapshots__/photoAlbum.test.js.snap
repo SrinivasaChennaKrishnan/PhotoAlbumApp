@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoAlbum renders without crashing given the required props 1`] = `
+<ContextProvider
+  value={null}
+>
+  <PhotoAlbum
+    albumData={Array []}
+    albumMessage="INITIAL"
+    albumlist={
+      Object {
+        "albumData": Array [],
+        "albumMessage": "INITIAL",
+        "dispatch": [MockFunction],
+        "loader": false,
+        "photoListMessage": "INITIAL",
+        "photolistObject": Array [],
+        "picSource": "",
+        "selectedAlbum": Array [],
+        "selectedPhoto": Array [],
+        "showPhoto": false,
+      }
+    }
+    dispatch={[Function]}
+    loader={false}
+    photoListMessage="INITIAL"
+    photolistObject={Array []}
+    picSource=""
+    selectedAlbum={Array []}
+    selectedPhoto={Array []}
+    showPhoto={false}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  />
+</ContextProvider>
+`;

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewPhoto renders without crashing given the required props 1`] = `
+<div
+  className="center"
+>
+  <Container
+    className="containerOutline"
+    fluid={false}
+  >
+    <ForwardRef
+      className="backToAlbumRow"
+      noGutters={false}
+    >
+      <p
+        className="backToAlbum"
+        onClick={[Function]}
+      >
+         &lt;&lt; Back to Photo Gallery
+      </p>
+    </ForwardRef>
+    <ForwardRef
+      noGutters={false}
+    >
+      <p
+        className="ml20"
+      >
+        <span
+          className="albumDescription"
+        >
+          Showing the image
+           
+          <span
+            className="albumDescriptionAlbumName"
+          />
+           
+          from the Album
+           
+        </span>
+         
+        <span
+          className="albumDescriptionAlbumName"
+        />
+      </p>
+    </ForwardRef>
+    <Container
+      className="albumOutline"
+      fluid={false}
+    >
+      <ForwardRef
+        noGutters={false}
+      />
+    </Container>
+  </Container>
+</div>
+`;

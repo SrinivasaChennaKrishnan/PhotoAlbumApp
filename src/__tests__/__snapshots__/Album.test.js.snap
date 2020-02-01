@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album renders without crashing given the required props 1`] = `
+<div
+  className="Album"
+>
+  <BrowserRouter>
+    <Suspense
+      fallback={
+        <div>
+          Loading...
+        </div>
+      }
+    >
+      <Switch>
+        <Route
+          component={
+            Object {
+              "$$typeof": Symbol(react.lazy),
+              "_ctor": [Function],
+              "_result": null,
+              "_status": -1,
+            }
+          }
+          exact={true}
+          path="/photoAlbum"
+        />
+        <Redirect
+          exact={true}
+          from="/"
+          to="photoAlbum"
+        />
+      </Switch>
+    </Suspense>
+  </BrowserRouter>
+</div>
+`;

@@ -1,5 +1,5 @@
 /** Urls to load the data */
 export const serviceUrl = {
-  albums: "http://jsonplaceholder.typicode.com/albums",
-  photos: "http://jsonplaceholder.typicode.com/photos"
+  albums: "https://jsonplaceholder.typicode.com/albums",
+  photos: "https://jsonplaceholder.typicode.com/photos"
 };
